@@ -80,39 +80,6 @@ class BrowseHistory {
 }
 ```
 
-## Class Diagram
-
-```plantuml
-@startuml
-
-interface IIterator<T> {
-  + hasNext(): boolean
-  + next(): void
-  + current(): T
-}
-
-class Iterator<T> {
-  - position: number
-  - length: number
-  - list: T[]
-  + current(): T
-  + hasNext(): boolean
-  + next(): void
-}
-
-class BrowseHistory {
-  - urls: string[]
-  + push(url: string): void
-  + pop(): string | undefined
-  + createIterator(): Iterator<string>
-}
-
-IIterator <|.. Iterator
-BrowseHistory -> Iterator
-
-@enduml
-```
-
 ## Usage Example
 
 Below is an example of how to use the implemented classes to manage browsing history and iterate over the stored URLs.
