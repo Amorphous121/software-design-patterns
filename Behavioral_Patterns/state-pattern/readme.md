@@ -130,5 +130,3 @@ canvas.mouseUp();   // Output: Erase tool mouse-up event fired
 The State Pattern is useful for allowing an object to change its behavior when its internal state changes. This example demonstrates how the pattern can be applied to a drawing application with different tools.
 
 ---
-
-Feel free to adjust or expand it according to your needs!
