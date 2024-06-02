@@ -14,7 +14,7 @@ This project demonstrates the implementation of the Strategy Design Pattern in T
 
 Below is a class diagram for the Strategy Pattern implementation:
 
-![Strategy Pattern Class Diagram](//www.plantuml.com/plantuml/dpng/hP2zIi0m4CVtFCMDYcqV83XK1K474HoSGtgjmSi7kQiWwhjRQf3KYaDn2k7Fx_znFOl9CdjIBWZcqLY4g-XJHkQOuKq1dDdoFnaTuPtng84bkp2TQdY9Rb0VggAl7GaMqgH4htzXbWmpt2QSgb3d4w7787oaIl6y3_zkUKd6Fb-4uV792PQPbV61uJVUJFWWCI_F5yZB1tTW0_QxjQuMD32keRg4Lm7LpFFthljnuvsyEPTQtOhoosgrwHtRjggqrmhJOnXcJvy0)
+![Strategy Pattern Class Diagram](/images/strategy-pattern.png)
 
 ## Classes and Implementation
 
