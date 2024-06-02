@@ -1,10 +1,14 @@
-Here's a README file based on the provided code, explaining the Memento Pattern and the specific implementation details.
-
 ---
 
 # Memento Design Pattern Example
 
 This project demonstrates the implementation of the Memento Design Pattern in TypeScript. The Memento Pattern is used to capture and externalize an object's internal state so that the object can be restored to this state later without violating encapsulation.
+
+## Class Diagram
+
+Below is a class diagram for the Momento Pattern implementation:
+
+![Strategy Pattern Class Diagram](/images/momento-pattern.png)
 
 ## Components of the Memento Pattern
 
