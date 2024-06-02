@@ -1,15 +1,15 @@
 import { BrowseHistory } from "./BrowseHistory";
 
-const history = new BrowseHistory();
+const browseHistory = new BrowseHistory();
 
-history.push("A");
-history.push("B");
-history.push("C");
+browseHistory.push("https://google.com");
+browseHistory.push("https://facebook.com");
+browseHistory.push("https://instagram.com");
 
-const historyIterator = history.createIterator();
+const historyIterator = browseHistory.createIterator();
 
-while(historyIterator.hasNext()) {
-    const current = historyIterator.current();
-    console.log(current);
-    historyIterator.next();
+while (historyIterator.hasNext()) {
+  const current = historyIterator.current();
+  console.log(current);
+  historyIterator.next();
 }

@@ -1,34 +1,17 @@
-import { Iterator } from "./iterator.interface";
+import { Iterator } from "./Iterator";
 
 export class BrowseHistory {
   constructor(private urls: string[] = []) {}
 
-  public push(url: string) {
+  push(url: string): void {
     this.urls.push(url);
   }
 
-  public pop(): string | undefined {
+  pop(): string | undefined {
     return this.urls.pop();
   }
 
-  public createIterator() {
-    return new this.ListIterator(this);
+  createIterator(): Iterator<string> {
+    return new Iterator<string>(this.urls);
   }
-
-  public ListIterator = class implements Iterator<string> {
-    private position = 0;
-    constructor(private history: BrowseHistory) {}
-
-    hasNext(): boolean {
-      return this.position < this.history.urls.length;
-    }
-
-    current(): string {
-      return this.history.urls[this.position];
-    }
-
-    next(): void {
-      this.position += 1;
-    }
-  };
 }
