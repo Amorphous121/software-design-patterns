@@ -1,5 +1,3 @@
-Here's the README file for the Command pattern using the provided code:
-
 ---
 
 # Command Design Pattern Example
@@ -100,5 +98,3 @@ addButton.click(); // Output: Adding a customer
 The Command Pattern is useful for decoupling the sender and receiver of a request and enabling the parameterization of clients with queues, requests, and operations. This example demonstrates how the pattern can be applied to encapsulate a request as an object and execute it through an invoker.
 
 ---
-
-Feel free to adjust or expand it according to your needs!
