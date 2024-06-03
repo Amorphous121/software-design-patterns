@@ -13,9 +13,9 @@ This project demonstrates the implementation of the Iterator Design Pattern in T
 
 ## Class Diagram
 
-Below is a class diagram for the Momento Pattern implementation:
+Below is a class diagram for the Iterator Pattern implementation:
 
-![Strategy Pattern Class Diagram](/images/iterator-pattern.png)
+![Iterator Pattern Class Diagram](/images/iterator-pattern.png)
 
 ## Classes and Implementation
 

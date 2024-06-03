@@ -16,7 +16,7 @@ This project demonstrates the implementation of the State Design Pattern in Type
 
 Below is a class diagram for the State Pattern implementation:
 
-![Strategy Pattern Class Diagram](/images/state-pattern.png)
+![State Pattern Class Diagram](/images/state-pattern.png)
 
 ## Classes and Implementation
 

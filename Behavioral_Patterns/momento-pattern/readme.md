@@ -8,7 +8,7 @@ This project demonstrates the implementation of the Memento Design Pattern in Ty
 
 Below is a class diagram for the Momento Pattern implementation:
 
-![Strategy Pattern Class Diagram](/images/momento-pattern.png)
+![Momento Pattern Class Diagram](/images/momento-pattern.png)
 
 ## Components of the Memento Pattern
 

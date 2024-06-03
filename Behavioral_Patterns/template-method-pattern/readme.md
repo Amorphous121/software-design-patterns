@@ -12,9 +12,9 @@ This project demonstrates the implementation of the Template Method Design Patte
 
 ## Class Diagram
 
-Below is a class diagram for the Strategy Pattern implementation:
+Below is a class diagram for the Template Method Pattern implementation:
 
-![Strategy Pattern Class Diagram](/images/template-method-design.png)
+![Template Method Pattern Class Diagram](/images/template-method-design.png)
 
 ## Classes and Implementation
 

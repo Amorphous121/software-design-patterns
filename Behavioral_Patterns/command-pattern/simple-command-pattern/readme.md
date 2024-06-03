@@ -13,7 +13,7 @@ This project demonstrates the implementation of the Command Design Pattern in Ty
 
 ## Class Diagram
 
-Below is a class diagram for the Momento Pattern implementation:
+Below is a class diagram for the Simple Command Pattern implementation:
 
 ![Simple Command Pattern Class Diagram](/images/simple-command-pattern.png)
 
