@@ -2,37 +2,32 @@
 
 Welcome to the world of Prathamesh Patil, a passionate software engineer specializing in the dynamic and versatile realm of Node.js. As you delve into this readme file, prepare to embark on a journey through the innovative mind of a dedicated creator.
 
-
 # Table of Contents
 
 1. [Purpose of This Repository](#purpose-of-this-repository)
-2. - [Essentials Before We Start Our Learning](#essentials-before-we-start-our-learning)
-    - [Object Oriented Design Paradigm](#object-oriented-design-paradigm)
-    - [Principles Of Object Oriented Design](#principles-of-object-oriented-design)
-    - [SOLID Principles](#solid-principles)
-        - [Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
-        - [Open/Closed Principle (OCP)](#openclosed-principle-ocp)
-        - [Liskov Substitution Principle (LSP)](#liskov-substitution-principle-lsp)
-        - [Interface Segregation Principle (ISP)](#interface-segregation-principle-isp)
-        - [Dependency Inversion Principle (DIP)](#dependency-inversion-principle-dip)
-    - [Principle of Programming for Interface, Not Implementations](#principle-of-programming-for-interface-not-implementations)
+2. [Essentials Before We Start Our Learning](#essentials-before-we-start-our-learning)
+   - [Object Oriented Design Paradigm](#object-oriented-design-paradigm)
+   - [Principles Of Object Oriented Design](#principles-of-object-oriented-design)
+   - [SOLID Principles](#solid-principles)
+     - [Single Responsibility Principle (SRP)](#single-responsibility-principle-srp)
+     - [Open/Closed Principle (OCP)](#openclosed-principle-ocp)
+     - [Liskov Substitution Principle (LSP)](#liskov-substitution-principle-lsp)
+     - [Interface Segregation Principle (ISP)](#interface-segregation-principle-isp)
+     - [Dependency Inversion Principle (DIP)](#dependency-inversion-principle-dip)
+   - [Principle of Programming for Interface, Not Implementations](#principle-of-programming-for-interface-not-implementations)
 3. [Interface: A Misunderstood Concept](#interface-a-misunderstood-concept)
 4. [Introduction to Design Patterns](#introduction-to-design-patterns)
-  - [Understanding Design Patterns](#understanding-design-patterns)
-  - [The Importance of Design Patterns](#the-importance-of-design-patterns)
-  - [Types of Design Patterns](#types-of-design-patterns)
-
-
+   - [Understanding Design Patterns](#understanding-design-patterns)
+   - [The Importance of Design Patterns](#the-importance-of-design-patterns)
+   - [Types of Design Patterns](#types-of-design-patterns)
 
 ## Purpose of This Repository
 
 This repository serves as a comprehensive guide for understanding design patterns and their application in creating loosely coupled applications with an object-oriented design paradigm. Whether you're a novice programmer or an experienced developer looking to enhance your skills, this resource aims to provide valuable insights and practical examples to deepen your understanding of design patterns.
 
-
 # Essentials Before We Start Our Learning
 
 ## Object Oriented Design Paradigm
-   
 
 Object-Oriented Design (OOD) is a programming paradigm centered around the concept of "objects", which encapsulate data and behavior. Objects are instances of classes, which serve as blueprints defining their structure and behavior. This paradigm emphasizes modularity, reusability, and extensibility, making it well-suited for building complex software systems. In OOD, concepts such as inheritance, encapsulation, polymorphism, and abstraction play crucial roles in modeling real-world entities and their interactions.
 
@@ -61,19 +56,16 @@ class Cat extends Animal {
   }
 }
 
-const dog = new Dog('Buddy');
+const dog = new Dog("Buddy");
 dog.speak(); // Output: Buddy barks.
 
-const cat = new Cat('Whiskers');
+const cat = new Cat("Whiskers");
 cat.speak(); // Output: Whiskers meows.
 ```
 
 In the above TypeScript example, we define a base class `Animal` with a property `name` and a method `speak()`, which logs a generic sound. Subclasses `Dog` and `Cat` extend the `Animal` class and override the `speak()` method with behavior specific to each animal type. This demonstrates the concept of inheritance and polymorphism, where objects of different classes share a common interface (`speak()` method) but exhibit different behaviors.
 
-
-
 ## Principles Of Object Oriented Design
-
 
 Object-Oriented Design (OOD) adheres to several principles that guide the development of robust and maintainable software systems. These principles help ensure that code is modular, flexible, and scalable, promoting good design practices throughout the development process. Some of the key principles include:
 
@@ -118,17 +110,15 @@ class Cylinder extends Circle {
 }
 
 const cylinder = new Cylinder(3, 5);
-console.log('Area:', cylinder.getArea()); // Output: Area: 28.274333882308138
-console.log('Volume:', cylinder.getVolume()); // Output: Volume: 141.3716694115407
+console.log("Area:", cylinder.getArea()); // Output: Area: 28.274333882308138
+console.log("Volume:", cylinder.getVolume()); // Output: Volume: 141.3716694115407
 ```
 
 In this TypeScript example, we demonstrate encapsulation by encapsulating the `radius` property within the `Circle` class. Inheritance is illustrated by the `Cylinder` class inheriting from the `Circle` class, thus reusing its properties and methods. Polymorphism is showcased through the `getVolume()` method, which overrides the `getArea()` method of the superclass to provide specific behavior for calculating the volume of a cylinder. Finally, abstraction is applied by hiding the implementation details of the calculations within the respective methods, providing a simplified interface for users of the classes.
 
-
-
 ## SOLID Principles
 
-SOLID is an acronym representing five key principles of object-oriented design that promote modular, flexible, and maintainable code. These principles serve as guidelines for writing clean, understandable, and scalable software systems. 
+SOLID is an acronym representing five key principles of object-oriented design that promote modular, flexible, and maintainable code. These principles serve as guidelines for writing clean, understandable, and scalable software systems.
 
 - **Single Responsibility Principle (SRP)**: A class should have only one reason to change. This principle states that a class should have only one responsibility or job, encapsulating a single aspect of functionality. This promotes high cohesion and low coupling, making classes easier to understand, maintain, and reuse.
 
@@ -193,7 +183,7 @@ const rectangle = new Rectangle(5, 3);
 const circle = new Circle(4);
 
 printArea(rectangle); // Output: Area: 15
-printArea(circle);    // Output: Area: 50.26548245743669
+printArea(circle); // Output: Area: 50.26548245743669
 
 // Interface Segregation Principle (ISP)
 interface Printable {
@@ -206,13 +196,13 @@ interface Scannable {
 
 class Printer implements Printable {
   print(): void {
-    console.log('Printing...');
+    console.log("Printing...");
   }
 }
 
 class Scanner implements Scannable {
   scan(): void {
-    console.log('Scanning...');
+    console.log("Scanning...");
   }
 }
 
@@ -226,7 +216,7 @@ class OrderService {
 
   placeOrder(): void {
     // Business logic for placing an order...
-    this.logger.log('Order placed.');
+    this.logger.log("Order placed.");
   }
 }
 
@@ -234,8 +224,8 @@ const logger = new Logger();
 const userService = new UserService(logger);
 const orderService = new OrderService(logger);
 
-userService.createUser('John Doe'); // Output: User John Doe created.
-orderService.placeOrder();         // Output: Order placed.
+userService.createUser("John Doe"); // Output: User John Doe created.
+orderService.placeOrder(); // Output: Order placed.
 ```
 
 In this TypeScript example, we demonstrate the SOLID principles:
@@ -250,10 +240,9 @@ In this TypeScript example, we demonstrate the SOLID principles:
 
 - **DIP**: The `UserService` and `OrderService` classes depend on abstractions (`Logger` interface) rather than concrete implementations, allowing for easier testing and maintenance.
 
-
 **Interface: A Misunderstood Concept**
 
-Interfaces in object-oriented programming (OOP) are often misunderstood despite being a fundamental concept in many programming languages. An interface defines a contract for classes, specifying a set of methods that implementing classes must provide. However, unlike classes, interfaces do not contain any implementation details; they only declare the methods or properties that implementing classes must adhere to. 
+Interfaces in object-oriented programming (OOP) are often misunderstood despite being a fundamental concept in many programming languages. An interface defines a contract for classes, specifying a set of methods that implementing classes must provide. However, unlike classes, interfaces do not contain any implementation details; they only declare the methods or properties that implementing classes must adhere to.
 
 Misconceptions surrounding interfaces often arise from their association with specific programming languages, such as Java or C#. However, interfaces are a concept present in many modern programming languages, including TypeScript, JavaScript, and others. Understanding interfaces is crucial for writing maintainable and extensible code, as they promote loose coupling and enable polymorphism.
 
@@ -290,12 +279,11 @@ const rectangle = new Rectangle(5, 3);
 const circle = new Circle(4);
 
 // Calculate and log the area of each shape
-console.log('Rectangle Area:', rectangle.calculateArea()); // Output: Rectangle Area: 15
-console.log('Circle Area:', circle.calculateArea());       // Output: Circle Area: 50.26548245743669
+console.log("Rectangle Area:", rectangle.calculateArea()); // Output: Rectangle Area: 15
+console.log("Circle Area:", circle.calculateArea()); // Output: Circle Area: 50.26548245743669
 ```
 
 In this TypeScript example, we define an interface `Shape`, which declares a method `calculateArea()`. The `Rectangle` and `Circle` classes implement this interface, providing their own implementations of the `calculateArea()` method. This demonstrates how interfaces define a contract that implementing classes must adhere to, enabling polymorphism and loose coupling in the codebase. Understanding interfaces as a contract rather than an implementation is essential for leveraging their full potential in software design.
-
 
 ## Principle of Programming for Interface, Not Implementations
 
@@ -334,7 +322,7 @@ class Client {
 
   doSomething(): void {
     // Client code relies on the Logger interface, not specific implementations
-    this.logger.log('Doing something...');
+    this.logger.log("Doing something...");
   }
 }
 
@@ -353,8 +341,6 @@ client2.doSomething(); // Output: [FILE] Doing something...
 
 In this TypeScript example, we define an interface `Logger`, declaring a method `log(message: string): void`. Two classes, `ConsoleLogger` and `FileLogger`, implement this interface, each providing its own implementation of the `log()` method. The `Client` class depends on the `Logger` interface rather than specific implementations, allowing it to work with any object that adheres to the `Logger` interface. This adherence to the interface, rather than concrete implementations, demonstrates the Principle of Programming for Interface, Not Implementations, fostering code that is more modular, flexible, and easily testable.
 
-
-
 ## Introduction To Design Patterns
 
 In the world of software development, think of design patterns as recipes for solving common problems. They're like blueprints that guide developers in creating software that's sturdy, flexible, and easy to work with.
@@ -364,7 +350,6 @@ In the realm of software development, design patterns serve as fundamental bluep
 #### Understanding Design Patterns
 
 Design patterns are simply proven solutions to recurring problems in software design. They're like tried-and-tested tricks that developers use to make their code better.
-
 
 At their core, design patterns represent time-tested solutions to common problems encountered during software design and development. They embody best practices distilled from real-world experience, providing developers with a structured approach to solving design issues.
 
@@ -382,12 +367,12 @@ Design patterns play a pivotal role in software engineering for several reasons:
 
 4. **Communication**: Design patterns serve as a common language for developers, enabling effective communication and collaboration within development teams and across organizations.
 
-
 #### Types of Design Patterns
 
 There are three main types of design patterns, each with its own set of handy tricks:
 
 1. **Creational Patterns**: These are about how objects are created. They help make sure that creating objects in our code is flexible and doesn't cause headaches. Examples include:
+
    - Singleton
    - Factory Method
    - Abstract Factory
@@ -395,6 +380,7 @@ There are three main types of design patterns, each with its own set of handy tr
    - Prototype
 
 2. **Structural Patterns**: These patterns are all about how objects are put together to form larger structures. They help us organize our code in a way that's easy to understand and work with. Examples include:
+
    - Adapter
    - Bridge
    - Composite
