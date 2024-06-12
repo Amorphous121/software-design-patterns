@@ -1,5 +1,3 @@
-Here is a detailed README file for the Facade Pattern example, including a class diagram.
-
 ---
 
 # Facade Design Pattern Example
@@ -105,5 +103,3 @@ Sending a message
 The Facade Pattern is useful for providing a simplified interface to a complex subsystem. This example demonstrates how the pattern can be applied to a notification system to make it easier to send messages without dealing with the intricacies of connecting, authenticating, and sending data.
 
 ---
-
-This README file should give you a comprehensive understanding of the Facade Pattern example and how to implement it in TypeScript.
